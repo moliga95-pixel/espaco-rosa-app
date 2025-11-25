@@ -1,0 +1,7 @@
+# Dependências do node
+/node_modules
+# Arquivos gerados pelo build
+/dist
+# Arquivos de log e configurações locais
+npm-debug.log*
+.DS_Store
