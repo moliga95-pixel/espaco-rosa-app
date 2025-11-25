@@ -4,14 +4,14 @@
   "description": "App de Gerenciamento para Espaço Rosa",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html" 
+    "build": "parcel build index.html && cp _redirects dist/" 
   },
   "dependencies": {
     "firebase": "^10.0.0",
     "lucide-react": "^0.302.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "buffer": "^6.0.3" 
+    "buffer": "^6.0.3"
   },
   "devDependencies": {
     "parcel": "^2.10.3",
