@@ -2,7 +2,6 @@
   "name": "espaco-rosa-app",
   "version": "1.0.0",
   "description": "App de Gerenciamento para Espaço Rosa",
-  "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
