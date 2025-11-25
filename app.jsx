@@ -10,7 +10,12 @@ setLogLevel('debug');
 // --- CONFIGURAÇÃO E AUTENTICAÇÃO FIREBASE ---
 // Variáveis globais de ambiente (disponíveis no Canvas)
 const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+
+// CORREÇÃO CRÍTICA: Força um objeto de config válido para evitar travamento do React.
+const firebaseConfig = typeof __firebase_config !== 'undefined' ? 
+  JSON.parse(__firebase_config) : 
+  { apiKey: "simulado", projectId: "simulado" }; // <-- LINHA CORRIGIDA
+
 // CORRIGIDO: O initialAuthToken é uma string bruta (JWT), não deve ser parseado como JSON.
 const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : undefined;
 
