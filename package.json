@@ -1,0 +1,21 @@
+{
+  "name": "espaco-rosa-app",
+  "version": "1.0.0",
+  "description": "App de Gerenciamento para Espaço Rosa",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "firebase": "^10.0.0",
+    "lucide-react": "^0.302.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}
